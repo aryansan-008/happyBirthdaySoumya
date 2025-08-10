@@ -54,35 +54,34 @@ export const GiftIcon = ({ className }: { className?: string }) => (
 export const MusicOnIcon = ({ className }: { className?: string }) => (
   <svg
     className={className}
-    fill="none"
-    stroke="currentColor"
     viewBox="0 0 24 24"
+    fill="currentColor"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="2"
-      d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.88 5.88a14.953 14.953 0 0112.24 0M9 9v6l6-3-6-3z"
-    ></path>
+    <path d="M12 3v10.55A4.002 4.002 0 0010 13c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z" />
   </svg>
 );
+
 export const MusicOffIcon = ({ className }: { className?: string }) => (
   <svg
     className={className}
+    viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
-    viewBox="0 0 24 24"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="2"
-      d="M5.586 15.586a5 5 0 01-2.828-2.828m14.852 2.828a5 5 0 00-2.828-2.828M9 9l6-3v6m-6 3l6-3M1 1l22 22"
-    ></path>
+      d="M12 3v10.55A4.002 4.002 0 0010 13c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"
+      fill="currentColor"
+      stroke="none"
+    />
+    <path d="M3 3l18 18" />
   </svg>
 );
+
 export const CloseIcon = ({ className }: { className?: string }) => (
   <svg
     className={className}

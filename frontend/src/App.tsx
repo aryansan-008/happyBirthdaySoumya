@@ -20,6 +20,14 @@ function App() {
                 .animate-fade-in { animation: fadeIn 1s ease-in-out; }
                 .animate-fade-in-slow { animation: fadeIn 2s ease-in-out; }
                 @keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+                
+                .love-card-container { perspective: 1000px; }
+                .love-card { position: relative; width: 100%; height: 100%; transition: transform 0.8s; transform-style: preserve-3d; }
+                .love-card-container:hover .love-card { transform: rotateY(180deg); }
+                .love-card-front, .love-card-back { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 0.5rem; }
+                .love-card-front { background-color: #1f2937; /* bg-gray-800 */ }
+                .love-card-back { background-color: #312e81; /* bg-indigo-900 */ transform: rotateY(180deg); padding: 1rem; }
+
                 .gift-box { position: relative; width: 200px; height: 200px; margin: auto; cursor: pointer; }
                 .gift-box .box { position: absolute; bottom: 0; width: 100%; height: 80%; background: #f2a2c0; }
                 .gift-box .lid { position: absolute; top: 0; width: 110%; height: 25%; background: #e67a9e; left: -5%; border-radius: 5px; }
@@ -30,6 +38,11 @@ function App() {
                 @keyframes unwrap-lid {
                     0% { transform: translateY(0) rotate(0); }
                     100% { transform: translateY(-100px) rotate(-20deg); opacity: 0; }
+                }
+                .animate-gift-reveal { animation: giftReveal 0.8s ease-out; }
+                @keyframes giftReveal {
+                    0% { opacity: 0; transform: translateY(20px) scale(0.9); }
+                    100% { opacity: 1; transform: translateY(0) scale(1); }
                 }
                 `}
       </style>

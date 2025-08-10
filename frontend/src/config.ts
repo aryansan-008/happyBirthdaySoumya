@@ -1,7 +1,7 @@
 export const config = {
   name: "Soumya",
   meetDate: "2025-03-19",
-  musicUrl: "https://www.bensound.com/bensound-music/bensound-betterdays.mp3",
+  musicUrl: "/Youre_My_Honey_Bunch_The_Cuppycake_Song-6878-mobiles24.mp3",
   gift: {
     name: "Bag",
     message:
